@@ -178,8 +178,8 @@ Else:
 
 ## Constraints
 
-- never output code
-- never modify files
+- never output code, only expected files
+- never modify files, only create expected ones
 - never assume architecture
 - never over-explain
 - state assumptions if any
