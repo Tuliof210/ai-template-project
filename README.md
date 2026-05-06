@@ -6,7 +6,7 @@ This repository stores the architectural rules and AI setup prompts that should 
 
 Run the bootstrap prompt before RTK.
 
-1. Open [meta/bootstrap.prompt.md] and run it in the repository root.
+1. Run /bootstrap skill
 2. This generates `CLAUDE.md`, which gives the AI tool a minimal, repo-specific brief.
 3. After that, install and initialize RTK for your preferred agent.
 
