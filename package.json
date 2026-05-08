@@ -19,8 +19,15 @@
     "README.md"
   ],
   "scripts": {
+    "check": "npm test && npm run pack:check:tmp",
     "test": "node --test",
-    "pack:check": "npm pack --dry-run"
+    "pack:check": "npm pack --dry-run",
+    "pack:check:tmp": "npm --cache /private/tmp/ai-template-npm-cache pack --dry-run",
+    "prepublishOnly": "npm run check",
+    "publish:current": "npm publish",
+    "publish:patch": "npm version patch && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:major": "npm version major && npm publish"
   },
   "engines": {
     "node": ">=18"
