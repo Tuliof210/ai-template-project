@@ -49,7 +49,9 @@ test("news prints package news", async () => {
   await run(["news"], output);
 
   assert.match(output.stdout.text, /AI Template News/);
-  assert.match(output.stdout.text, /0\.1\.0/);
+  assert.match(output.stdout.text, /0\.1\.3/);
+  assert.doesNotMatch(output.stdout.text, /0\.1\.2/);
+  assert.doesNotMatch(output.stdout.text, /0\.1\.0/);
 });
 
 function createOutput() {

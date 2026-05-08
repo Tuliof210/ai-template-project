@@ -65,7 +65,7 @@ async function run(argv, io = process) {
 
   if (parsed.command === "news") {
     const news = await fs.readFile(path.join(packageRoot, "NEWS.md"), "utf8");
-    write(io.stdout, news.trimEnd());
+    write(io.stdout, latestNewsEntry(news));
     return 0;
   }
 
@@ -239,6 +239,25 @@ function write(stdout, message) {
   stdout.write(`${message}\n`);
 }
 
+function latestNewsEntry(news) {
+  const lines = news.trim().split("\n");
+  const firstVersionIndex = lines.findIndex((line) => line.startsWith("## "));
+
+  if (firstVersionIndex === -1) {
+    return news.trimEnd();
+  }
+
+  const nextVersionIndex = lines.findIndex(
+    (line, index) => index > firstVersionIndex && line.startsWith("## ")
+  );
+
+  if (nextVersionIndex === -1) {
+    return lines.join("\n").trimEnd();
+  }
+
+  return lines.slice(0, nextVersionIndex).join("\n").trimEnd();
+}
+
 function helpText() {
   return [
     "AI Template CLI",
@@ -259,6 +278,7 @@ module.exports = {
   copyManagedFiles,
   helpText,
   initEntries,
+  latestNewsEntry,
   main,
   parseArgs,
   run,

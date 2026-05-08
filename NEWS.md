@@ -1,5 +1,17 @@
 # AI Template News
 
+## 0.1.3
+
+- Expanded the package documentation with clearer README guidance for installation, commands, managed files, and publishing workflows.
+
+## 0.1.2
+
+- Polished the CLI package docs and packaging metadata for a smoother npm publishing flow.
+
+## 0.1.1
+
+- Refined the initial package setup and bundled project scaffolding after the first release.
+
 ## 0.1.0
 
 - Added the `ai-template` CLI for `npx ai-template init`, `npx ai-template sync`, and `npx ai-template news`.
