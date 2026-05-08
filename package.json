@@ -1,5 +1,5 @@
 {
-  "name": "ai-template",
+  "name": "@tulioferreira/ai-template",
   "version": "0.1.0",
   "description": "CLI to install and sync AI agent skills, architecture rules, and model guidance.",
   "license": "UNLICENSED",
