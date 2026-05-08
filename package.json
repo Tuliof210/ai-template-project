@@ -1,10 +1,13 @@
 {
-  "name": "@tulioferreira/ai-template",
+  "name": "@spideru/ai-template",
   "version": "0.1.0",
   "description": "CLI to install and sync AI agent skills, architecture rules, and model guidance.",
   "license": "UNLICENSED",
   "bin": {
     "ai-template": "bin/ai-template.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     ".claude",

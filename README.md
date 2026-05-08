@@ -20,16 +20,6 @@ npx ai-template news
 
 Both `init` and `sync` accept `--cwd <path>` for automation or tests.
 
-## Local Development
-
-```bash
-npm test
-npm run pack:check
-node bin/ai-template.js init --cwd /path/to/project
-node bin/ai-template.js sync --cwd /path/to/project
-node bin/ai-template.js news
-```
-
 ## Contents
 
 - `.claude/skills` - Claude-compatible skills.
