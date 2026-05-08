@@ -1,0 +1,33 @@
+{
+  "name": "ai-template",
+  "version": "0.1.0",
+  "description": "CLI to install and sync AI agent skills, architecture rules, and model guidance.",
+  "license": "UNLICENSED",
+  "bin": {
+    "ai-template": "bin/ai-template.js"
+  },
+  "files": [
+    ".claude",
+    ".codex",
+    "bin",
+    "meta",
+    "src",
+    "NEWS.md",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "claude",
+    "codex",
+    "skills",
+    "cli"
+  ]
+}
