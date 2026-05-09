@@ -1,6 +1,6 @@
 {
   "name": "@spideru/ai-template",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "CLI to install and sync AI agent skills, architecture rules, and model guidance.",
   "license": "UNLICENSED",
   "bin": {
