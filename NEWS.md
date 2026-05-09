@@ -1,5 +1,9 @@
 # AI Template News
 
+## Unreleased
+
+- Split the old `spec` skill into `spec-write` and `spec-run` so planning and execution can be used independently in both bundled Claude and Codex skill sets.
+
 ## 0.1.3
 
 - Expanded the package documentation with clearer README guidance for installation, commands, managed files, and publishing workflows.

@@ -10,7 +10,7 @@ const { run } = require("../src/cli");
 
 test("init installs managed files without overwriting existing files", async () => {
   const target = await fs.mkdtemp(path.join(os.tmpdir(), "ai-template-init-"));
-  const existingSkill = path.join(target, ".codex/skills/spec/SKILL.md");
+  const existingSkill = path.join(target, ".codex/skills/spec-write/SKILL.md");
 
   await fs.mkdir(path.dirname(existingSkill), { recursive: true });
   await fs.writeFile(existingSkill, "local edit\n");
@@ -49,9 +49,10 @@ test("news prints package news", async () => {
   await run(["news"], output);
 
   assert.match(output.stdout.text, /AI Template News/);
-  assert.match(output.stdout.text, /0\.1\.3/);
-  assert.doesNotMatch(output.stdout.text, /0\.1\.2/);
-  assert.doesNotMatch(output.stdout.text, /0\.1\.0/);
+  assert.match(output.stdout.text, /Unreleased/);
+  assert.match(output.stdout.text, /spec-write/);
+  assert.match(output.stdout.text, /spec-run/);
+  assert.doesNotMatch(output.stdout.text, /0\.1\.3/);
 });
 
 function createOutput() {
