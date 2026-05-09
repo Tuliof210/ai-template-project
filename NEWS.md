@@ -1,8 +1,9 @@
 # AI Template News
 
-## 0.2.5
+## Unreleased
 
 - Added `spec-fix` skill to fix implementations that fail validation, tests, or runtime behavior after `spec-run`.
+- `spec-write` and `spec-run` skills available for planning and executing feature specs.
 
 ## 0.2.0
 
