@@ -1,6 +1,10 @@
 # AI Template News
 
-## Unreleased
+## 0.2.1
+
+- Added `spec-fix` skill to fix implementations that fail validation, tests, or runtime behavior after `spec-run`.
+
+## 0.2.0
 
 - Split the old `spec` skill into `spec-write` and `spec-run` so planning and execution can be used independently in both bundled Claude and Codex skill sets.
 
