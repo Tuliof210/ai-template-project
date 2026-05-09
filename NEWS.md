@@ -1,6 +1,6 @@
 # AI Template News
 
-## 0.2.1
+## 0.2.5
 
 - Added `spec-fix` skill to fix implementations that fail validation, tests, or runtime behavior after `spec-run`.
 
