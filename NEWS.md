@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added `create-component` skill with Next.js/TypeScript component architecture conventions.
 - Added `spec-fix` skill to fix implementations that fail validation, tests, or runtime behavior after `spec-run`.
 - `spec-write` and `spec-run` skills available for planning and executing feature specs.
 
